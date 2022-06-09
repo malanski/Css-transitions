@@ -1,0 +1,213 @@
+.header-wrapper {
+    width: 100vw;
+    min-height: 100vh;
+    background: linear-gradient(45deg, black, rgb(57, 57, 57), rgb(136, 136, 136), rgb(184, 184, 184));
+    background-size: 400% 400%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    animation: backgroundTrans 8s ease-in-out infinite; 
+
+}
+
+h1 {
+    text-transform: uppercase;
+    letter-spacing: 3px;
+}
+
+h2 {
+    text-transform: uppercase;
+    letter-spacing: 3px;
+}
+
+/* SOCIAL MEDIA */
+.social-media {
+    margin-top: 1rem;
+    display: flex;
+}
+
+.social-media > a:nth-child(1)  {
+    border-radius: 20px 0 0 20px;
+}
+
+.social-media > a:nth-child(2)  {
+    border-radius: 0 20px 20px 0;
+}
+
+.social-media .link {
+    font-size: 24px;
+    padding: 1rem 4rem;
+    border: 1px solid white;
+    min-width: 4rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: .8s cubic-bezier(0.55, 0.025, 0.675, 0.97);
+}
+
+.link:hover {
+    color: goldenrod;
+    background-color: rgb(38, 38, 38);
+}
+
+@keyframes backgroundTrans {
+    0% {
+        background-position: 0% 80%;    
+    }
+    50% {
+        background-position: 80% 100%;    
+    }
+    100% {
+        background-position: 0% 90%;    
+    }
+}
+
+/* HamburgerButton */
+.checkbox-container {
+    /* background-color: black;
+    width: 100%;
+    min-height: 50vh; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.checkbox {
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    display: flex;
+    justify-content: center;
+    cursor: pointer;
+    z-index: 9999;
+    transition: 600ms all ease-in-out 0.4s;
+
+}
+
+.checkbox .trace {
+    background-color: greenyellow;
+    position: absolute;
+    width: 90px;
+    height: 9px;
+    border-radius: 4px;
+    transition: 0.8s all ease-in-out 0.2s;
+}
+
+/* Movement */
+.checkbox .trace:nth-child(1) {
+    top: 26px;
+    transform: rotate(0);
+}
+
+.checkbox .trace:nth-child(2) {
+    top: 46px;
+    transform: rotate(0);
+}
+
+.checkbox .trace:nth-child(3) {
+    top: 66px;
+    transform: rotate(0);
+}
+
+#toggle {
+    display: none;
+}
+
+/* Navigation Menu */
+
+.menu {
+    position: absolute;
+    top: 30px;
+    right: 30px;
+    background: transparent;
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    box-shadow: 0px 0px 0px 0px white;
+    z-index: -1;
+    transition: 800ms ease-in-out 0.2s;
+    
+}
+
+.menu-items {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 2;
+    opacity: 0;
+    visibility: hidden;
+    transition: 400ms ease-in-out 0s;
+}
+
+.menu-items ul {
+    list-style-type: none;
+}
+
+.menu-items ul li a {
+    margin: 10px 0;
+    color: white;
+    text-decoration: none;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    font-size: 35px;
+}
+
+/* Menu animation  */
+
+#toggle:checked + .checkbox .trace:nth-child(1) {
+    transform: rotate(45deg);
+    background-color: rgb(184, 184, 184);
+    top: 47px;
+}
+
+#toggle:checked + .checkbox .trace:nth-child(2) {
+    transform: translateX(-100px);
+    width: 30px;
+    visibility: hidden;
+    opacity: 0;
+}
+
+
+#toggle:checked + .checkbox .trace:nth-child(3) {
+    transform: rotate(-45deg);
+    background-color: rgb(143, 143, 143);
+    top: 48px;
+}
+
+#toggle:checked + .checkbox {
+    background-color: white;   
+    border-radius: 50%;
+}
+
+#toggle:checked ~ .menu {
+    box-shadow: 0px 0px 0px 100vmax gray;
+    z-index: 1;
+}
+
+#toggle:checked ~ .menu-items {
+    visibility: visible;
+    opacity: 1;
+}
+
+@media (max-width: 800px) {
+    .social-media{
+        flex-direction: column;
+    }
+    .social-media > a:nth-child(1)  {
+        border-radius: 20px;
+        margin-bottom: 5px;
+    }
+    
+    .social-media > a:nth-child(2)  {
+        border-radius: 20px;
+    }
+}
