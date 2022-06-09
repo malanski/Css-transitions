@@ -14,7 +14,11 @@
   
   At the end of the project, we will have the construction of a portfolio using only HTML and CSS to fix the classes.
   
- Frontend Teacher: Gabriela Pinheiro
+ Frontend Teacher: [Gabriela Pinheiro](http://www.github.com/SpruceGabriela)
  at - Bootcamp at Digital Innovation One  
 
-<img alt="Bootcamp Badge" title="Bootcamp Badge" width="100px" src="js-assets/TQIbadge.png">
+
+<div align="center">
+<img alt="Bootcamp Badge" title="Bootcamp Badge" width="100px" src="assets/TQIbadge.png">
+<img alt="CSS Transition course Badge" title="CSS Transition course Badge" width="100px" src="assets/CSSbadge.png">
+</div>
