@@ -3,7 +3,14 @@
 [DIO - Digital Innovation One](https://web.dio.me)  
 
 
-# CSS course
+# CSS course 
+
+<div align="right">
+    
+## [Deploy](https://malanski.github.io/Css-transitions/)
+  
+</div>
+
   
 ## Project Index
   - activities(folder)= has its css files(activities/assets/...) separated by activities and references to video lessons
