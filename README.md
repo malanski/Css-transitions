@@ -10,12 +10,18 @@
   - assets(folder)= has the files referring to the completion project (portfolio)
 
 ## Objectieve
-  In this project we learn the most important topics to leverage in the world of animations using CSS.  
-  
-  Among them the CSS Transitions using pseudo elements and pseudo classes and also CSS @keyframes.  
-  
-  At the end of the project, we will have the construction of a portfolio using only HTML and CSS to fix the classes.
-  
+
+Construction of a portfolio using only HTML and CSS to correct the classes.
+
+In this project I have developed animations using CSS:
+
+  - Morphing menu
+  - Hamburger menu
+  - CSS transitions using pseudo elements
+  - CSS transitions using pseudo classes
+  - CSS @keyframes
+
+
  Frontend Teacher: [Gabriela Pinheiro](http://www.github.com/SpruceGabriela)
  at - Bootcamp at Digital Innovation One  
 
@@ -24,3 +30,5 @@
 <img alt="Bootcamp Badge" title="Bootcamp Badge" width="100px" src="assets/TQIbadge.png">
 <img alt="CSS Transition course Badge" title="CSS Transition course Badge" width="100px" src="assets/CSSbadge.png">
 </div>
+
+<img width="520px" alt="CSS transition Course certification" title="CSS transition Course certification" src="assets/certifCSS-trans.png">
