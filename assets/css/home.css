@@ -49,7 +49,7 @@
     justify-content: center;
     align-items: center;
     position: relative;
-    
+    color: azure;
 }
 
 .card-wrapper::before {
@@ -66,9 +66,8 @@
 }
 
 .card-wrapper h3 {
-    font-size: 35px;
-    text-transform: uppercase;
-    letter-spacing: 4px;
+    font-size: 25px;
+    letter-spacing: 2px;
     margin: 0;
     transition: 0.8s;
     color: greenyellow;
@@ -97,15 +96,21 @@
 .card:hover > .card-wrapper p {
     opacity: 1;
     visibility: visible;
-    font-size: 14px;
+    font-size: 15px;
 }
 
-.card a {
+.card-container .card a {
     text-decoration: none;
     color: greenyellow;
 }
 .card .card-wrapper:hover {
-    color: goldenrod;
+    color: rgb(157, 233, 122);
+}
+.ball {
+    border: 1px solid greenyellow;
+    border-radius: 50%;
+    padding: 10px;
+    font-size: 25px;
 }
 
 @media (max-width: 800px) {
